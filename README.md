@@ -14,6 +14,10 @@
 <td>0x00-python-hello_world</td>
 <td>Learn about Python and start to code with it.</td>
 </tr>
+<tr>
+<td>0x01-python-if_else_loops_functions</td>
+<td>Learn how to use if/else statements as well as while-loops and for-loops.</td>
+</tr>
 </table>
 
 </body>
