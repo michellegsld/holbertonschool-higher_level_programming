@@ -68,6 +68,10 @@
 <td>100-print_tebahpla.py</td>
 <td>Prints the ASCII alphabet in reverse while alternating lowercase and uppercase.</td>
 </tr>
+<tr>
+<td>101-remove_char_at.py</td>
+<td>Returns a copy of a string without a character specified by their index.</td>
+</tr>
 </table>
 
 </body>
