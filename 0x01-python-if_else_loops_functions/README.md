@@ -64,6 +64,10 @@
 <td>13-insert_number.c</td>
 <td>Inserts a number into a sorted singly linked list.</td>
 </tr>
+<tr>
+<td>100-print_tebahpla.py</td>
+<td>Prints the ASCII alphabet in reverse while alternating lowercase and uppercase.</td>
+</tr>
 </table>
 
 </body>
