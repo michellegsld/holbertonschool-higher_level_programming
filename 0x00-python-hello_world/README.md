@@ -57,6 +57,18 @@
 <td>10-check_cycle.c</td>
 <td>A function in C that checks if a singly linked list a cycle in it.</td>
 </tr>
+<tr>
+<td>100-write.py</td>
+<td>A Python script that uses <code>write</code> and prints to <code>stderr</code>.</td>
+</tr>
+<tr>
+<td>101-compile</td>
+<td>Shell script that compiles a Python script. The Python file name is saved in the enviroment variable <code>$PYFILE</code>.</td>
+</tr>
+<tr>
+<td>102-magic_calculation.py</td>
+<td>A Python function that follows a certain Python bytecode.</td>
+</tr>
 </table>
 
 </body>
