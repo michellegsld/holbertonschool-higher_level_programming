@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <body>
 <h2>README for 0x01-python-if_else_loops_programming</h2>
