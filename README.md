@@ -18,6 +18,10 @@
 <td>0x01-python-if_else_loops_functions</td>
 <td>Learn how to use if/else statements as well as while-loops and for-loops.</td>
 </tr>
+<tr>
+<td>0x02-python-import_modules</td>
+<td>Learn to import functions from other files, use them and create modules.</td>
+</tr>
 </table>
 
 </body>
