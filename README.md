@@ -20,7 +20,7 @@
 </tr>
 <tr>
 <td>0x02-python-import_modules</td>
-<td>Learn to import functions from other files, use them and create modules.</td>
+<td>Learn to import and use functions from other files, as well as create modules.</td>
 </tr>
 </table>
 
