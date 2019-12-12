@@ -32,6 +32,18 @@
 <td>5-variable_load.py</td>
 <td>Imports the variable <code>a</code> from the file <code>variable_load_5.py</code> and prints its value.</td>
 </tr>
+<tr>
+<td>100-my_calculator.py</td>
+<td>Imports all functions from <code>calculator_1.py</code> and does math depending on the command line arguments. Certain conditions must be met to perform the math or different error messages could appear and the program exits with <code>1</code>.</td>
+</tr>
+<tr>
+<td>102-magic_calculation.py</td>
+<td>A Python function written to do exactly the same as a Python bytecode.</td>
+</tr>
+<tr>
+<td>103-fast_alphabet.py</td>
+<td>Prints the ASCII alphabet in uppercase through importing and using print with no strings.</td>
+</tr>
 </table>
 
 </body>
