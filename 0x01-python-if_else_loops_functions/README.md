@@ -72,6 +72,10 @@
 <td>101-remove_char_at.py</td>
 <td>Returns a copy of a string without a character specified by their index.</td>
 </tr>
+<tr>
+<td>102-magic_calculation.py</td>
+<td>A Python function that follows a certain Python bytecode with if-statements.</td>
+</tr>
 </table>
 
 </body>
