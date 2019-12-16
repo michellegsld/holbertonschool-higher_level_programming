@@ -37,6 +37,14 @@
 <td>Imports all functions from <code>calculator_1.py</code> and does math depending on the command line arguments. Certain conditions must be met to perform the math or different error messages could appear and the program exits with <code>1</code>.</td>
 </tr>
 <tr>
+<td>101-easy_print.py</td>
+<td>A program that imports another file in order to print a specific sentence.</td>
+</tr>
+<tr>
+<td>_print.py_</tr>
+<td>The file to import in <code>101-easy_print.py</code>, which will print the phrase <code>#pythoniscool</code>.</td>
+</tr>
+<tr>
 <td>102-magic_calculation.py</td>
 <td>A Python function written to do exactly the same as a Python bytecode.</td>
 </tr>
