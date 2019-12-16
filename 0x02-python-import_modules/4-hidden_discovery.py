@@ -2,6 +2,6 @@
 import hidden_4
 if __name__ == "__main__":
     words = dir(hidden_4)
-    for name in range(words):
-        if name[0] != "_" and name[1] != "_":
+    for i in range(len(words)):
+        if words[i][0] != "_" and words[i][0] != "_":
             print("{:s}".format(name))
