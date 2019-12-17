@@ -19,17 +19,21 @@ int is_palindrome(listint_t **head)
 
 	if (*head == NULL)
 		return (1);
-	while (i < len / 2)
+	while (i < (len / 2))
 	{
 		add_node(&tmp_head, current->n);
 		current = current->next;
 		i++;
 	}
-	i = 0;
-	current = *head;
-	tmp_current = tmp_head;
-	while (i != len / 2)
+	if ((len % 2) != 0)
 	{
+		current = current->next;
+		i++;
+	}
+	tmp_current = tmp_head;
+	while (i < len)
+	{
+		printf("\nTmp: %d, Current: %d \n", tmp_current->n, current->n);
 		if (tmp_current->n == current->n)
 		{
 			current = current->next;
