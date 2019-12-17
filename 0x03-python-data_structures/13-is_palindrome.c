@@ -1,5 +1,7 @@
 #include "lists.h"
 
+size_t list_len(listint_t *head);
+
 listint_t *add_node(listint_t **head, int num);
 
 /**
@@ -13,14 +15,15 @@ int is_palindrome(listint_t **head)
 	listint_t *current = *head;
 	listint_t *tmp_head = NULL;
 	listint_t *tmp_current = NULL;
-	size_t i = 0, len = 0;
+	size_t i = 0, len = list_len(*head);
+
 	if (*head == NULL)
 		return (1);
-	while (current)
+	while (i < len / 2)
 	{
 		add_node(&tmp_head, current->n);
 		current = current->next;
-		len++;
+		i++;
 	}
 	i = 0;
 	current = *head;
@@ -41,6 +44,29 @@ int is_palindrome(listint_t **head)
 	}
 	free_listint(tmp_head);
 	return (1);
+}
+
+/**
+ * list_len - Goes through a listint_t list
+ * @head: The first node of the list
+ *
+ * Return: Always an unsigned int, the total number of nodes
+ */
+size_t list_len(listint_t *head)
+{
+	unsigned int total = 0;
+	listint_t *current = head;
+
+	if (head == NULL)
+		return (0);
+
+	while (current)
+	{
+		total++;
+		current = current->next;
+	}
+
+	return (total);
 }
 
 /**
