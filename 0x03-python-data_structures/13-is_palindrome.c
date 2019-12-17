@@ -13,17 +13,19 @@ int is_palindrome(listint_t **head)
 	listint_t *current = *head;
 	listint_t *tmp_head = NULL;
 	listint_t *tmp_current = NULL;
-
+	size_t i = 0, len = 0;
 	if (*head == NULL)
 		return (1);
 	while (current)
 	{
 		add_node(&tmp_head, current->n);
 		current = current->next;
+		len++;
 	}
+	i = 0;
 	current = *head;
 	tmp_current = tmp_head;
-	while (current)
+	while (i != len / 2)
 	{
 		if (tmp_current->n == current->n)
 		{
@@ -35,6 +37,7 @@ int is_palindrome(listint_t **head)
 			free_listint(tmp_head);
 			return (0);
 		}
+		i++;
 	}
 	free_listint(tmp_head);
 	return (1);
