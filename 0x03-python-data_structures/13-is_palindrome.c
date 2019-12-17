@@ -33,7 +33,6 @@ int is_palindrome(listint_t **head)
 	tmp_current = tmp_head;
 	while (i < len)
 	{
-		printf("\nTmp: %d, Current: %d \n", tmp_current->n, current->n);
 		if (tmp_current->n == current->n)
 		{
 			current = current->next;
