@@ -22,6 +22,10 @@
 <td>0x02-python-import_modules</td>
 <td>Learn to import and use functions from other files, as well as create modules.</td>
 </tr>
+<tr>
+<td>0x03-python-data_structures</td>
+<td>Learn what are and how to use the data structures in Python: lists and tuples.</td>
+</tr>
 </table>
 
 </body>
