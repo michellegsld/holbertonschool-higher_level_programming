@@ -26,6 +26,10 @@
 <td>0x03-python-data_structures</td>
 <td>Learn what are and how to use the data structures in Python: lists and tuples.</td>
 </tr>
+<tr>
+<td>0x04-python-more_data_structures</td>
+<td>Learn about sets and how to use them as well as when to use them versus lists. We are to also learn about dictionaries and how they work and when to use them versus lists and sets.</td>
+</tr>
 </table>
 
 </body>
