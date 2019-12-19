@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h2>README for holbertonschool-higher_level_programming</h2>
+<h2>README for 0x03-python-data_structures</h2>
 <h4>A directory within the holbertonschool-higher_level_programming repo.</h4>
 
 <table style="width:100%">
