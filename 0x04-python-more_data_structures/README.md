@@ -62,6 +62,10 @@ A directory within the holbertonschool-higher_level_programming repo.
 <td>12-roman_to_int.py</td>
 <td>Converts a Roman Numeral to an integer.</td>
 </tr>
+<tr>
+<td>101-square_matrix_map.py</td>
+<td>Squaring the value of each integer within a matrix by using <code>map</code>.</td>
+</tr>
 </table>
 
 
