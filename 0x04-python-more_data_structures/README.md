@@ -63,8 +63,16 @@ A directory within the holbertonschool-higher_level_programming repo.
 <td>Converts a Roman Numeral to an integer.</td>
 </tr>
 <tr>
+<td>100-weight_average.py</td>
+<td>Returns the weighted average of all integers tuple, which contains the score and weight.</td>
+</tr>
+<tr>
 <td>101-square_matrix_map.py</td>
 <td>Squaring the value of each integer within a matrix by using <code>map</code>.</td>
+</tr>
+<tr>
+<td>102-complex_delete.py</td>
+<td>Deleting keys with a specific value from a dictionary.</td>
 </tr>
 </table>
 
