@@ -7,11 +7,6 @@ def roman_to_int(roman_string):
     end_sum = 0
     length = len(roman_string)
 
-    if length == 1:
-        for k, v in roman.items():
-            if roman_string[0] == k:
-                return v
-
     for i in range(0, length):
         for k, v in roman.items():
             if roman_string[i] == k:
