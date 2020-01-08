@@ -2,8 +2,7 @@
 <html>
 <body>
 <h2>README for 0x04-python-more_data_structures</h2>
-<h4>This is the holbertonschool-higher_level_programming repo.</h4>
-A directory within the holbertonschool-higher_level_programming repo.
+<h4>A directory within the holbertonschool-higher_level_programming repo.</h4>
 
 <table style="width:100%">
 <tr>
