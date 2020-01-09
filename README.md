@@ -34,6 +34,10 @@ This repo consists of the Python programming language.
 <td>0x05-python-exceptions</td>
 <td>To learn what are and how to use exceptions. How does it differ from errors and when to implement a clean-up action after an exception.</td>
 </tr>
+<tr>
+<td>0x06-python-classes</td>
+<td>To learn about object-oriented programming. Through this project, one will learn about classes, objects/instances, attributes and the different kinds (public, protected, and private). What are methods, including <code>__init__</code>, and what <code>self</code> is.</td>
+</tr>
 </table>
 
 </body>
