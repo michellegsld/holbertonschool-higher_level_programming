@@ -37,6 +37,16 @@
 <td>6-raise_exception_msg.py</td>
 <td>Raises a name exception with a message.</td>
 </tr>
+<td>100-safe_print_integer_err.py</td>
+<td>Prints an integer with the except printing an stderr message.</td>
+<tr>
+<td>101-safe_function.py</td>
+<td>Executes a function safely.</td>
+</tr>
+<tr>
+<td>102-magic_calculation.py</td>
+<td>A Python function that follows certain Python bytecode with if-statements and try/except.</td>
+</tr>
 </table>
 
 </body>
