@@ -3,23 +3,8 @@ class Square:
     """Represents a square with a size."""
     def __init__(self, size=0, position=(0, 0)):
         """Initializes private instance attribute: size."""
-        if type(size) is not int:
-            raise TypeError("size must be an integer", end='')
-        elif size < 0:
-            raise ValueError("size must be >= 0", end='')
-        else:
-            self.__size = size
-        if type(position) is not tuple or len(position) is not 2:
-            raise TypeError("position must be a tuple \
-            of 2 positive integers", end='')
-        elif type(position[0]) is not int or position[0] < 0:
-            raise TypeError("position must be a tuple \
-            of 2 positive integers", end='')
-        elif type(position[1]) is not int or position[1] < 0:
-            raise TypeError("position must be a tuple \
-            of 2 positive integers", end='')
-        else:
-            self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """Returns the current square area."""
