@@ -37,6 +37,10 @@
 <td>6-square.py</td>
 <td>Uses the <code>Square</code>class and adds another private instance attribute.</td>
 </tr>
+<tr>
+<td>103-magic_class.py</td>
+<td>An uncompleted class that follows certain Python bytecode.</td>
+</tr>
 </table>
 
 </body>
