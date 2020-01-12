@@ -31,8 +31,5 @@ def matrix_divided(matrix, div):
     newmat = [row[:] for row in matrix]
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
-            num = matrix[i][j] / div
-            if type(num) is float:
-                num = round(num, 2)
-            newmat[i][j] = num
+            newmat[i][j] = round(matrix[i][j] / div, 2)
     return newmat
