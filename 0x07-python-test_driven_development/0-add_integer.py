@@ -5,6 +5,7 @@ add_integer(a, b=98)
 tests/0-add_integer.txt
 """
 
+
 def add_integer(a, b=98):
     """
     Adds two integers, else raises a TypeError
