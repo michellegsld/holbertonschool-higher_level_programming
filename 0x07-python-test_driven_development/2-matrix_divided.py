@@ -11,11 +11,11 @@ def matrix_divided(matrix, div):
     Divides all elements of a matrix, else raises an error
     """
     te_str = "matrix must be a matrix (list of lists) of integers/floats"
-    if type(matrix) is not list:
+    if type(matrix) is not list or len(matrix[0]) is 0:
         raise TypeError(te_str)
     if type(div) is not int and type(div) is not float:
         raise TypeError("div must be a number")
-    if div is 0:
+    if div is 0 or type(div) is None:
         raise ZeroDivisionError("division by zero")
     for i in range(len(matrix)):
         if type(matrix[i]) is not list:
