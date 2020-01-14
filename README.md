@@ -42,6 +42,10 @@ This repo consists of the Python programming language.
 <td>0x07-python-test_driven_development</td>
 <td>To learn more about testing programs and why it's important. Through this project, we have to learn to write documentation for each module and function while trying to cover every edge case.</td>
 </tr>
+<tr>
+<td>0x08-python-more_classes</td>
+<td>To continue learning about object-oriented programming. There are new special methods: <code>__str__</code> and <code>__repr__</code>. We are really just going more in depth with classes.</td>
+</tr>
 </table>
 
 </body>
