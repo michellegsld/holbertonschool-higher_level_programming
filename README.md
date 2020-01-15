@@ -46,6 +46,10 @@ This repo consists of the Python programming language.
 <td>0x08-python-more_classes</td>
 <td>To continue learning about object-oriented programming. There are new special methods: <code>__str__</code> and <code>__repr__</code>. We are really just going more in depth with classes.</td>
 </tr>
+<tr>
+<td>0x09-python-everything_is_object</td>
+<td>Making sure to understand what's happening behind the code and what it truely means that everything is an object in Python.</td>
+</tr>
 </table>
 
 </body>
