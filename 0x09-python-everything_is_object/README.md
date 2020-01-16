@@ -130,6 +130,10 @@
 <td>Returns the string “Holberton” a number of times depending on the number of the iteration.</td>
 </tr>
 <tr>
+<td>101-locked_class.py</td>
+<td>A class without attributes that prevents users from dynamically creating new instance attributes unless the new instance attribute is called <code>first_name</code>.</td>
+</tr>
+<tr>
 <td>103-line1.txt</td>
 <td>How many int objects are created by the execution of the first line of the script?</td>
 </tr>
