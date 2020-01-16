@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h2>README for holbertonschool-higher_level_programming</h2>
-<h4>This is the holbertonschool-higher_level_programming repo.</h4>
-This repo consists of the Python programming language.
+<h2>README for 0x09-python-everything_is_object</h2>
+<h4>A directory within the holbertonschool-higher_level_programming repo.</h4>
 
 <table style="width:100%">
 <tr>
@@ -153,9 +152,6 @@ This repo consists of the Python programming language.
 <tr>
 <td>104-line5.txt</td>
 <td>How many int objects are created by the execution of the last line of the script?</td>
-</tr>
-<tr>
-<td>104-line5.txt</td>
 </tr>
 <tr>
 <td>106-line1.txt</td>
