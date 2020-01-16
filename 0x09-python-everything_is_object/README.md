@@ -127,6 +127,14 @@ This repo consists of the Python programming language.
 <td>Will the last line of this script print <code>139926795932424</code>?</td>
 </tr>
 <tr>
+<td>103-line1.txt</td>
+<td>How many int objects are created by the execution of the first line of the script?</td>
+</tr>
+<tr>
+<td>103-line2.txt</td>
+<td>How many int objects are created by the execution of the first line of the script?</td>
+</tr>
+<tr>
 <td>106-line1.txt</td>
 <td>How many string objects are created by the execution of the first line of the script?</td>
 </tr>
