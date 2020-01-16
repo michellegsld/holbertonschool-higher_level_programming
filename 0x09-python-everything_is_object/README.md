@@ -126,6 +126,10 @@
 <td>Will the last line of this script print <code>139926795932424</code>?</td>
 </tr>
 <tr>
+<td>100-magic_string.py</td>
+<td>Returns the string “Holberton” a number of times depending on the number of the iteration.</td>
+</tr>
+<tr>
 <td>103-line1.txt</td>
 <td>How many int objects are created by the execution of the first line of the script?</td>
 </tr>
