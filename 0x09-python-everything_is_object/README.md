@@ -132,7 +132,15 @@ This repo consists of the Python programming language.
 </tr>
 <tr>
 <td>103-line2.txt</td>
+<td>How many int objects are created by the execution of the second line of the script?</td>
+</tr>
+<tr>
+<td>104-line1.txt</td>
 <td>How many int objects are created by the execution of the first line of the script?</td>
+</tr>
+<tr>
+<td>104-line2.txt</td>
+<td>How many int objects are created by the execution of the second line of the script?</td>
 </tr>
 <tr>
 <td>106-line1.txt</td>
