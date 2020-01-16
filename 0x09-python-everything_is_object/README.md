@@ -162,6 +162,10 @@
 <td>How many int objects are created by the execution of the last line of the script?</td>
 </tr>
 <tr>
+<td>105-line1.txt</td>
+<td>Before the execution of line 2, how many int objects have been created and are still in memory?</td>
+</tr>
+<tr>
 <td>106-line1.txt</td>
 <td>How many string objects are created by the execution of the first line of the script?</td>
 </tr>
