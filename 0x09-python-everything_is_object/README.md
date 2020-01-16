@@ -143,6 +143,21 @@ This repo consists of the Python programming language.
 <td>How many int objects are created by the execution of the second line of the script?</td>
 </tr>
 <tr>
+<td>104-line3.txt</td>
+<td>After the execution of line 3, is the int object pointed by <code>a</code> deleted?</td>
+</tr>
+<tr>
+<td>104-line4.txt</td>
+<td>After the execution of line 4, is the int object pointed by <code>a</code> deleted?</td>
+</tr>
+<tr>
+<td>104-line5.txt</td>
+<td>How many int objects are created by the execution of the last line of the script?</td>
+</tr>
+<tr>
+<td>104-line5.txt</td>
+</tr>
+<tr>
 <td>106-line1.txt</td>
 <td>How many string objects are created by the execution of the first line of the script?</td>
 </tr>
