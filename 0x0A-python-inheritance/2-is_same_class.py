@@ -9,4 +9,4 @@ def is_same_class(obj, a_class):
     """
     Checks if an object is exactly an instance of a specified class
     """
-    return(isinstance(obj, a_class))
+    return(issubclass(a_class, type(obj)))
