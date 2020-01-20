@@ -50,6 +50,10 @@ This repo consists of the Python programming language.
 <td>0x09-python-everything_is_object</td>
 <td>Making sure to understand what's happening behind the code and what it truely means that everything is an object in Python.</td>
 </tr>
+<tr>
+<td>0x0A-python-inheritance</td>
+<td>To learn about inheritance in Python. What happens when a class is inherited and so on.</td>
+</tr>
 </table>
 
 </body>
