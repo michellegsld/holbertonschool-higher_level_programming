@@ -7,7 +7,7 @@ class BaseGeometry
 
 class BaseGeometry:
     """
-    Adds an area() method
+    Checks if value is valid and has an area that raises an error
     """
     def area(self):
         """
