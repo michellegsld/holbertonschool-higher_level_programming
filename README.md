@@ -54,6 +54,10 @@ This repo consists of the Python programming language.
 <td>0x0A-python-inheritance</td>
 <td>To learn about inheritance in Python. What happens when a class is inherited and so on.</td>
 </tr>
+<tr>
+<td>0x0B-python-input_output</td>
+<td>How to interact with files within Python. This includes: opening, writing to, reading, and closing the file.</td>
+</tr>
 </table>
 
 </body>
