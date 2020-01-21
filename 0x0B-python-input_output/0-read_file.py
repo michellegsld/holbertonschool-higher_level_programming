@@ -11,4 +11,4 @@ def read_file(filename=""):
     """
     with open(filename) as fil:
         for line in fil:
-            print(line, end='')
+            print("{}".format(line), end='')
