@@ -58,6 +58,10 @@ This repo consists of the Python programming language.
 <td>0x0B-python-input_output</td>
 <td>How to interact with files within Python. This includes: opening, writing to, reading, and closing the file.</td>
 </tr>
+<tr>
+<td>0x0C-python-almost_a_circle</td>
+<td>Getting more familiar with classes, inheritance, and unittesting. We learn about args, kwargs, and more about JSON.</td>
+</tr>
 </table>
 
 </body>
