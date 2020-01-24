@@ -6,6 +6,7 @@ imports and inherits class Base
 """
 from models.base import Base
 
+
 class Rectangle(Base):
     """
     Create a Rectangle
@@ -104,3 +105,11 @@ class Rectangle(Base):
         """
         for i in range(self.__height):
             print('#' * self.__width)
+
+    def __str__(self):
+        """
+        Prints a specific statement with info about the instance
+        """
+        i, x, y = str(self.id), str(self.__x), str(self.__y)
+        w, h = str(self.__width), str(self.__height)
+        return ("[Rectangle] (" + i + ") " + x + "/" + y + " - " + w + "/" + h)
