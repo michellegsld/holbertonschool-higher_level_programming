@@ -101,9 +101,13 @@ class Rectangle(Base):
 
     def display(self):
         """
-        Prints in stdout the Rectangle made up of '#'
+        Prints in stdout the Rectangle made up of '#', accounting for x and y
         """
+        for y in range(self.__y):
+            print()
         for i in range(self.__height):
+            for x in range(0, self.__x):
+                print(" ", end='')
             print('#' * self.__width)
 
     def __str__(self):
