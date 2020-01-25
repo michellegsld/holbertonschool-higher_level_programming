@@ -120,7 +120,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """
-        Updates the attributes of Rectangle"
+        Updates the attributes of Rectangle
         """
         attkwarg = {"id": None, "width": None,
                     "height": None, "x": None, "y": None}
