@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
 base.py
-class Base()
+class Base
 """
 
 
 class Base:
     """
-    The most super class to manage id attribute
+    Main purpose: manage the id attribute
     """
     __nb_objects = 0
     def __init__(self, id=None):
