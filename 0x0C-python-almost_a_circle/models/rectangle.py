@@ -144,3 +144,15 @@ class Rectangle(Base):
                     reinit.append(value)
                 i += 1
         self.__init__(reinit[1], reinit[2], reinit[3], reinit[4], reinit[0])
+
+    def to_dictionary(self):
+        """
+        Returns dictionary representation of Rectangle
+        """
+        attributes = {"x": None, "y": None, "id": None,
+                      "height": None, "width": None}
+        final = []
+        for key, value in attributes.items():
+            value = getattr(self, key)
+            attributes.update({key: value})
+        return attributes
