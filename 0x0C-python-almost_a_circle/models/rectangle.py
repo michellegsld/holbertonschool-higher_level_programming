@@ -9,7 +9,7 @@ from models.base import Base
 
 class Rectangle(Base):
     """
-    Create a Rectangle
+    Creates a Rectangle
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         """
@@ -128,7 +128,7 @@ class Rectangle(Base):
                       2: self.__height, 3: self.__x, 4: self.__y}
         reinit = []
         if args is not None and len(args) > 0:
-            for i in range(5):
+            for i in range(5): u
                 if i >= len(args):
                     reinit.append(attributes.get(i))
                 else:
