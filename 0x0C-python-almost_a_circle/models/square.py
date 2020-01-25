@@ -40,3 +40,28 @@ class Square(Rectangle):
         """
         super().__init__(value, value, self.x, self.y, self.id)
         self.__size = value
+
+    def update(self, *args, **kwargs):
+        """
+        Updates the attributes of Square
+        """
+        attkwarg = {"id": None, "size": None, "x": None, "y": None}
+        attributes = {0: self.id, 1: self.__size, 2: self.x, 3: self.y}
+        reinit = []
+        if args is not None and len(args) > 0:
+            for i in range(4):
+                if i >= len(args):
+                    reinit.append(attributes.get(i))
+                else:
+                    reinit.append(args[i])
+        else:
+            for key, value in kwargs.items():
+                attkwarg.update({key: value})
+            i = 0
+            for value in attkwarg.values():
+                if value is None:
+                    reinit.append(attributes.get(i))
+                else:
+                    reinit.append(value)
+                i += 1
+        self.__init__(reinit[1], reinit[2], reinit[3], reinit[0])
