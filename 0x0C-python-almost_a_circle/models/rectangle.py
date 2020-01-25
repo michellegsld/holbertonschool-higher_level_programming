@@ -117,3 +117,17 @@ class Rectangle(Base):
         i, x, y = str(self.id), str(self.__x), str(self.__y)
         w, h = str(self.__width), str(self.__height)
         return ("[Rectangle] (" + i + ") " + x + "/" + y + " - " + w + "/" + h)
+
+    def update(self, *args):
+        """
+        Updates the attributes of Rectangle"
+        """
+        attributes = {0: self.id, 1: self.__width,
+                      2: self.__height, 3: self.__x, 4: self.__y}
+        reinit = []
+        for i in range(5):
+            if i >= len(args):
+                reinit.append(attributes.get(i))
+            else:
+                reinit.append(args[i])
+        self.__init__(reinit[1], reinit[2], reinit[3], reinit[4], reinit[0])
