@@ -65,3 +65,14 @@ class Square(Rectangle):
                     reinit.append(value)
                 i += 1
         self.__init__(reinit[1], reinit[2], reinit[3], reinit[0])
+
+    def to_dictionary(self):
+        """
+        Returns dictionary representation of Square
+        """
+        attributes = {"id": None, "x": None, "size": None, "y": None}
+        final = []
+        for key, value in attributes.items():
+            value = getattr(self, key)
+            attributes.update({key: value})
+        return attributes
