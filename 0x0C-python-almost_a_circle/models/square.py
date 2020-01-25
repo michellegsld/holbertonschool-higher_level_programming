@@ -17,6 +17,7 @@ class Square(Rectangle):
         Sets all attributes
         """
         super().__init__(size, size, x, y, id)
+        self.__size = size
 
     def __str__(self):
         """
@@ -24,3 +25,18 @@ class Square(Rectangle):
         """
         i, x, y, s = str(self.id), str(self.x), str(self.y), str(self.width)
         return ("[Square] (" + i + ") " + x + "/" + y + " - " + s)
+
+    @property
+    def size(self):
+        """
+        Returns the size
+        """
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        """
+        Validates and sets the width
+        """
+        super().__init__(value, value, self.x, self.y, self.id)
+        self.__size = value
