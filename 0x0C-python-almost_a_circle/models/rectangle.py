@@ -128,7 +128,7 @@ class Rectangle(Base):
                       2: self.__height, 3: self.__x, 4: self.__y}
         reinit = []
         if args is not None and len(args) > 0:
-            for i in range(5): u
+            for i in range(5):
                 if i >= len(args):
                     reinit.append(attributes.get(i))
                 else:
