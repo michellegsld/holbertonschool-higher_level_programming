@@ -43,3 +43,12 @@ class Base:
             finlist.append(list_objs[i].to_dictionary())
         with open(filename, "w+", encoding="utf-8") as fil:
             fil.write(Base.to_json_string(finlist))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        Returns the list of the JSON string representation
+        """
+        if json_string is None or not json_string:
+            return []
+        return json.loads(json_string)
