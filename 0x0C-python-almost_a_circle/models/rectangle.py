@@ -131,7 +131,7 @@ class Rectangle(Base):
                     reinit.append(attributes.get(i))
                 else:
                     reinit.append(args[i])
-        self.__init__(reinit[1], reinit[2], reinit[3], reinit[4], reinit[0])
+            self.__init__(reinit[1], reinit[2], reinit[3], reinit[4], reinit[0])
         else:
             self.id = kwargs.get("id", self.id)
             self.width = kwargs.get("width", self.width)
