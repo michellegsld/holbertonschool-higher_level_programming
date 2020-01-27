@@ -36,7 +36,7 @@ class Base:
         -- now:
         """
         ld = list_dictionaries
-        return (json.dumps("[]") if ld is None or not ld else json.dumps(ld))
+        return ("[]" if ld is None or not ld else json.dumps(ld))
 
     @classmethod
     def save_to_file(cls, list_objs):
