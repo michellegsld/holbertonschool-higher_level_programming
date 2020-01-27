@@ -49,24 +49,21 @@ class Square(Rectangle):
         """
         attkwarg = {"id": None, "size": None, "x": None, "y": None}
         attributes = {0: self.id, 1: self.__size, 2: self.x, 3: self.y}
-        reinit = []
+        rein = []
         if args is not None and len(args) > 0:
             for i in range(4):
                 if i >= len(args):
-                    reinit.append(attributes.get(i))
+                    rein.append(attributes.get(i))
                 else:
-                    reinit.append(args[i])
+                    rein.append(args[i])
+            self.__init__(rein[1], rein[2], rein[3], rein[0])
         else:
-            for key, value in kwargs.items():
-                attkwarg.update({key: value})
-            i = 0
-            for value in attkwarg.values():
-                if value is None:
-                    reinit.append(attributes.get(i))
-                else:
-                    reinit.append(value)
-                i += 1
-        self.__init__(reinit[1], reinit[2], reinit[3], reinit[0])
+            self.id = kwargs.get("id", self.id)
+            self.size = kwargs.get("size", self.size)
+            self.width = kwargs.get("size", self.size)
+            self.height = kwargs.get("size", self.size)
+            self.x = kwargs.get("x", self.x)
+            self.y = kwargs.get("y", self.y)
 
     def to_dictionary(self):
         """
