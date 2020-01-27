@@ -124,14 +124,14 @@ class Rectangle(Base):
         """
         attributes = {0: self.id, 1: self.__width,
                       2: self.__height, 3: self.__x, 4: self.__y}
-        reinit = []
+        rein = []
         if args is not None and len(args) > 0:
             for i in range(5):
                 if i >= len(args):
-                    reinit.append(attributes.get(i))
+                    rein.append(attributes.get(i))
                 else:
-                    reinit.append(args[i])
-            self.__init__(reinit[1], reinit[2], reinit[3], reinit[4], reinit[0])
+                    rein.append(args[i])
+            self.__init__(rein[1], rein[2], rein[3], rein[4], rein[0])
         else:
             self.id = kwargs.get("id", self.id)
             self.width = kwargs.get("width", self.width)
