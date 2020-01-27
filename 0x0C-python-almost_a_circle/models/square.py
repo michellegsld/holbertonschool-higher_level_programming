@@ -17,13 +17,12 @@ class Square(Rectangle):
         Sets all attributes
         """
         super().__init__(size, size, x, y, id)
-        self.size = size
 
     def __str__(self):
         """
         Prints a specific statement with info about the instance
         """
-        i, x, y, s = str(self.id), str(self.x), str(self.y), str(self.size)
+        i, x, y, s = str(self.id), str(self.x), str(self.y), str(self.width)
         return ("[Square] (" + i + ") " + x + "/" + y + " - " + s)
 
     @property
@@ -31,7 +30,7 @@ class Square(Rectangle):
         """
         Returns the size
         """
-        return self.__size
+        return self.width
 
     @size.setter
     def size(self, value):
@@ -40,14 +39,13 @@ class Square(Rectangle):
         """
         self.width = value
         self.height = value
-        self.__size = value
 
     def update(self, *args, **kwargs):
         """
         Updates the attributes of Square
         """
         attkwarg = {"id": None, "size": None, "x": None, "y": None}
-        attributes = {0: self.id, 1: self.__size, 2: self.x, 3: self.y}
+        attributes = {0: self.id, 1: self.width, 2: self.x, 3: self.y}
         rein = []
         if args is not None and len(args) > 0:
             for i in range(4):
@@ -58,9 +56,8 @@ class Square(Rectangle):
             self.__init__(rein[1], rein[2], rein[3], rein[0])
         else:
             self.id = kwargs.get("id", self.id)
-            self.size = kwargs.get("size", self.size)
-            self.width = kwargs.get("size", self.size)
-            self.height = kwargs.get("size", self.size)
+            self.width = kwargs.get("size", self.width)
+            self.height = kwargs.get("size", self.height)
             self.x = kwargs.get("x", self.x)
             self.y = kwargs.get("y", self.y)
 
