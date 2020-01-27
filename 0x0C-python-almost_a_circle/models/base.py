@@ -45,8 +45,8 @@ class Base:
         """
         filename = str(cls.__name__) + ".json"
         finlist = []
-        for i in range(len(list_objs)):
-            finlist.append(list_objs[i].to_dictionary())
+        for item in list_objs:
+            finlist.append(item.to_dictionary())
         with open(filename, "w+", encoding="utf-8") as fil:
             fil.write(Base.to_json_string(finlist))
 
