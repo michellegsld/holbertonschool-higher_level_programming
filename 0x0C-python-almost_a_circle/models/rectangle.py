@@ -122,8 +122,6 @@ class Rectangle(Base):
         """
         Updates the attributes of Rectangle
         """
-        attkwarg = {"id": None, "width": None,
-                    "height": None, "x": None, "y": None}
         attributes = {0: self.id, 1: self.__width,
                       2: self.__height, 3: self.__x, 4: self.__y}
         reinit = []
@@ -133,17 +131,13 @@ class Rectangle(Base):
                     reinit.append(attributes.get(i))
                 else:
                     reinit.append(args[i])
-        else:
-            for key, value in kwargs.items():
-                attkwarg.update({key: value})
-            i = 0
-            for value in attkwarg.values():
-                if value is None:
-                    reinit.append(attributes.get(i))
-                else:
-                    reinit.append(value)
-                i += 1
         self.__init__(reinit[1], reinit[2], reinit[3], reinit[4], reinit[0])
+        else:
+            self.id = kwargs.get("id", self.id)
+            self.width = kwargs.get("width", self.width)
+            self.height = kwargs.get("height", self.height)
+            self.x = kwargs.get("x", self.x)
+            self.y = kwargs.get("y", self.y)
 
     def to_dictionary(self):
         """
