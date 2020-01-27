@@ -70,6 +70,8 @@ class Base:
         """
         Returns an instance with all attributes already set
         """
+        if cls.__name__ is not "Rectangle" or cls.__name__ is not "Square":
+            return None
         instance = cls(1, 1)
         instance.update(**dictionary)
         return instance
