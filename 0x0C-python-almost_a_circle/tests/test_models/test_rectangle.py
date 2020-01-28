@@ -18,6 +18,12 @@ class TestRectangleClass(unittest.TestCase):
         """
         Base._Base__nb_objects = 0
 
+    def test_checkInheritance(self):
+        """
+        Checking Rectangle instance inherits Base
+        """
+        self.assertIsInstance(Rectangle(5, 8), Base)
+
     def test_createRegular(self):
         """
         Creating Rectangle instance with all regular values
