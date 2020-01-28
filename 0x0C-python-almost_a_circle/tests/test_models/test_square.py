@@ -7,6 +7,7 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
+
 class TestSquareClass(unittest.TestCase):
     """
     Contains multiple testing methods
@@ -57,7 +58,7 @@ class TestSquareClass(unittest.TestCase):
         Creating Square instance with x as a string
         """
         with self.assertRaises(TypeError):
-            Square(3,"Ex", 6)
+            Square(3, "Ex", 6)
 
     def test_xError2(self):
         """
@@ -80,6 +81,20 @@ class TestSquareClass(unittest.TestCase):
         with self.assertRaises(ValueError):
             Square(3, 2, -3)
 
+    def test_area(self):
+        """
+        Returning the area of a Square
+        """
+        sq3 = Square(4)
+        self.assertEqual(sq3.area(), 16)
+
+    def test_toDictionary(self):
+        """
+        Returns the dictionary of a Square
+        """
+        sq4 = Square(8, 3, 4, 5)
+        self.assertEqual(sq4.to_dictionary(), {"id": 5, "x": 3,
+                                               "size": 8, "y": 4})
 
 if __name__ == '__main__':
     unittest.main()
