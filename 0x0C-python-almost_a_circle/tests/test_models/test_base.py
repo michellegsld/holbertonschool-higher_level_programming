@@ -4,6 +4,8 @@ Unittest for base.py
 """
 import unittest
 from models.base import Base
+from models.rectangle import Rectangle
+from models.square import Square
 
 
 class TestBaseClass(unittest.TestCase):
@@ -84,6 +86,24 @@ class TestBaseClass(unittest.TestCase):
         Testing instance from_json_string within Base: ACTUAL LIST
         """
         self.assertEqual(Base().from_json_string("[4, 6]"), [4, 6])
+
+    def test_create(self):
+        """
+        Testing instance create within Base: NORMAL RECTANGLE
+        """
+        rect1 = Rectangle(8, 2)
+        rect1_dic = rect1.to_dictionary()
+        rectA = rect1.create(**rect1_dic)
+        self.assertEqual(str(rectA), "[Rectangle] (1) 0/0 - 8/2")
+
+    def test_create2(self):
+        """
+        Testing instance create within Base: NORMAL SQUARE
+        """
+        sq1 = Square(4)
+        sq1_dic = sq1.to_dictionary()
+        sqA = sq1.create(**sq1_dic)
+        self.assertEqual(str(sqA), "[Square] (1) 0/0 - 4")
 
 if __name__ == '__main__':
     unittest.main()
