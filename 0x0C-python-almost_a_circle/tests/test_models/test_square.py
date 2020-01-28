@@ -88,5 +88,13 @@ class TestSquareClass(unittest.TestCase):
         sq3 = Square(4)
         self.assertEqual(sq3.area(), 16)
 
+    def test_update(self):
+        """
+        Testing instance create within Square: NORMAL UPDATE
+        """
+        sq4 = Square(6)
+        sq4.update(678)
+        self.assertEqual(str(sq4), "[Square] (678) 0/0 - 6")
+
 if __name__ == '__main__':
     unittest.main()
