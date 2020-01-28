@@ -5,6 +5,7 @@ Unittest for base.py
 import unittest
 from models.base import Base
 
+
 class TestBaseClass(unittest.TestCase):
     """
     Contains multiple testing methods
@@ -70,7 +71,8 @@ class TestBaseClass(unittest.TestCase):
         """
         Testing instance to_json_string within Base: ACTUAL LIST WITH DICT
         """
-        self.assertEqual(Base().to_json_string([{"one": 1, "two": 2}]), "[{\"one\": 1, \"two\": 2}]")
+        self.assertEqual(Base().to_json_string(
+            [{"one": 1, "two": 2}]), "[{\"one\": 1, \"two\": 2}]")
 
 if __name__ == '__main__':
     unittest.main()
