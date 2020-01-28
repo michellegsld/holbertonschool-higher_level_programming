@@ -88,13 +88,5 @@ class TestSquareClass(unittest.TestCase):
         sq3 = Square(4)
         self.assertEqual(sq3.area(), 16)
 
-    def test_toDictionary(self):
-        """
-        Returns the dictionary of a Square
-        """
-        sq4 = Square(8, 3, 4, 5)
-        self.assertEqual(sq4.to_dictionary(), {"id": 5, "x": 3,
-                                               "size": 8, "y": 4})
-
 if __name__ == '__main__':
     unittest.main()
