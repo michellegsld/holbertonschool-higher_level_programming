@@ -101,5 +101,13 @@ class TestRectangleClass(unittest.TestCase):
         rect3 = Rectangle(3, 3)
         self.assertEqual(rect3.area(), 9)
 
+    def test_update(self):
+        """
+        Testing instance create within Rectangle: NORMAL UPDATE
+        """
+        rect4 = Rectangle(2, 3)
+        rect4.update(50)
+        self.assertEqual(str(rect4), "[Rectangle] (50) 0/0 - 2/3")
+
 if __name__ == '__main__':
     unittest.main()
