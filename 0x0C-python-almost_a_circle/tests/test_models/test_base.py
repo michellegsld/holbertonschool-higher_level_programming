@@ -49,30 +49,6 @@ class TestBaseClass(unittest.TestCase):
         object4 = Base(None)
         self.assertEqual(object4.id, 2)
 
-    def test_toJSONstr(self):
-        """
-        Testing instance to_json_string within Base: EMPTY LIST
-        """
-        self.assertEqual(Base().to_json_string([]), "[]")
-
-    def test_toJSONstr2(self):
-        """
-        Testing instance to_json_string within Base: NONE
-        """
-        self.assertEqual(Base().to_json_string(None), "[]")
-
-    def test_toJSONstr3(self):
-        """
-        Testing instance to_json_string within Base: ACTUAL LIST NO DICT INSIDE
-        """
-        self.assertEqual(Base().to_json_string([4, 6]), "[4, 6]")
-
-    def test_toJSONstr4(self):
-        """
-        Testing instance to_json_string within Base: ACTUAL LIST WITH DICT
-        """
-        self.assertEqual(Base().to_json_string(
-            [{"one": 1, "two": 2}]), "[{\"one\": 1, \"two\": 2}]")
 
 if __name__ == '__main__':
     unittest.main()
