@@ -7,7 +7,7 @@ from models.base import Base
 from models.rectangle import Rectangle
 
 
-class TestBaseClass(unittest.TestCase):
+class TestRectangleClass(unittest.TestCase):
     """
     Contains multiple testing methods
     """
