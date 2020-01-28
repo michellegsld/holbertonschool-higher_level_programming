@@ -67,6 +67,23 @@ class TestBaseClass(unittest.TestCase):
         """
         self.assertEqual(Base().to_json_string([4, 6]), "[4, 6]")
 
+    def test_fromJSONstr(self):
+        """
+        Testing instance from_json_string within Base: EMPTY LIST
+        """
+        self.assertEqual(Base().from_json_string("[]"), [])
+
+    def test_fromJSONstr2(self):
+        """
+        Testing instance from_json_string within Base: NONE
+        """
+        self.assertEqual(Base().from_json_string(None), [])
+
+    def test_fromJSONstr3(self):
+        """
+        Testing instance from_json_string within Base: ACTUAL LIST
+        """
+        self.assertEqual(Base().from_json_string("[4, 6]"), [4, 6])
 
 if __name__ == '__main__':
     unittest.main()
