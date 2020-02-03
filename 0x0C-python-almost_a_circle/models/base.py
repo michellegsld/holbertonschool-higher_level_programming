@@ -4,9 +4,11 @@ base.py
 class Base
 importing json
 importing os.path
+importing turtle
 """
 import json
 import os.path
+import turtle
 
 
 class Base:
@@ -31,7 +33,7 @@ class Base:
         Returns a JSON string representation
         -- before had:
         if list_dictionaries is None or not list_dictionaries:
-            return json.dumps("[]")
+            return "[]"
         return json.dumps(list_dictionaries)
         -- now:
         """
@@ -91,3 +93,20 @@ class Base:
         with open(filename) as fil:
             jsonlist = cls.from_json_string(fil.read())
         return [cls.create(**item) for item in jsonlist]
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """
+        Draws the shapes
+        """
+        shape = turtle.Turtle()
+        page = turtle.Screen()
+        page.title("These are shapes")
+        for item in list_rectangles + list_squares:
+            shape.up()
+            shape.setpos(item.x, item.y)
+            shape.down()
+            for i in range(0, 3):
+                shape.forward(item.width)
+                shape.right(90)
+                shape.forward(item.height)
