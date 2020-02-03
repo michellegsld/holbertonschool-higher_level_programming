@@ -106,7 +106,8 @@ class Base:
             shape.up()
             shape.setpos(item.x, item.y)
             shape.down()
-            for i in range(0, 3):
+            for i in range(0, 4):
                 shape.forward(item.width)
                 shape.right(90)
                 shape.forward(item.height)
+        page.exitonclick()
