@@ -62,6 +62,10 @@ This repo consists of the Python programming language.
 <td>0x0C-python-almost_a_circle</td>
 <td>Getting more familiar with classes, inheritance, and unittesting. We learn about args, kwargs, and more about JSON.</td>
 </tr>
+<tr>
+<td>0x0D-SQL_introduction</td>
+<td>To learn SQL, which stands for Structured Query Language, and understand what a relational database is. A relational database is basically a database with a collection of data that is organized by tables, records, and columns, where a table contains only one object representation. We will learn to manage databases.</td>
+</tr>
 </table>
 
 </body>
