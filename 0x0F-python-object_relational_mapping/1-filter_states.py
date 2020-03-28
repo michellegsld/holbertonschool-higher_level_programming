@@ -8,10 +8,11 @@ List all states with a name starting with N (upper N)
 Uses:
 0-select_states.sql
 """
-from sys import argv
-import MySQLdb
 
 if __name__ == "__main__":
+    from sys import argv
+    import MySQLdb
+
     sql_user = argv[1]
     sql_pass = argv[2]
     db_name = argv[3]
@@ -25,7 +26,7 @@ if __name__ == "__main__":
     )
 
     cur = db.cursor()
-    amount = cur.execute("SELECT * FROM states ORDER BY states.id;")
+    amount = cur.execute("SELECT id, name FROM states ORDER BY states.id;")
 
     for i in range(0, amount):
         results = cur.fetchone()
