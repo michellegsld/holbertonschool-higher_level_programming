@@ -13,10 +13,12 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
+
 class State(Base):
     """
     A new SQL table
     """
     __tablename__ = "states"
-    id = Column("id", Integer(), autoincrement=True, nullable=False, primary_key=True)
+    id = Column("id", Integer(), autoincrement=True,
+                nullable=False, primary_key=True)
     name = Column("name", String(128), nullable=False)
