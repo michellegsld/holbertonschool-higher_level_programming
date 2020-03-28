@@ -27,9 +27,9 @@ if __name__ == "__main__":
     cur = db.cursor()
     amount = cur.execute("SELECT * FROM states ORDER BY states.id;")
 
-    for i in range(amount):
+    for i in range(0, amount):
         results = cur.fetchone()
-        if results[1][:1] == 'N':
+        if results[1][0] == 'N':
             print(results)
 
     cur.close()
