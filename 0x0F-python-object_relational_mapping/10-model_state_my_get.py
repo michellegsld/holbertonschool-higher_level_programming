@@ -19,17 +19,21 @@ if __name__ == "__main__":
     db_name = argv[3]
     name_searched = argv[4]
 
+    switch = 0
+
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                            .format(sql_user, sql_pass, db_name),
                            pool_pre_ping=True)
 
     Session = sessionmaker(engine)
     session = Session()
-    instance = session.query(State).filter(State.name.contains(name_searched))
+    results = session.query(State).all()
 
-    if instance is None:
+    for instance in results:
+        if name_searched == instance.name:
+            print("{}".format(instance.id))
+            switch = 1
+    if switch == 0:
         print("Not found")
-    else:
-        print("{}".format(instance.id))
 
     session.close()
