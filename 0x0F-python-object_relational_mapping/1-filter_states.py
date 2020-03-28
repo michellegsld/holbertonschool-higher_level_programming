@@ -29,7 +29,8 @@ if __name__ == "__main__":
 
     for i in range(amount):
         results = cur.fetchone()
-        if results[1][0] == 'N':
+        if results[1][:1] == 'N':
             print(results)
 
+    cur.close()
     db.close()
