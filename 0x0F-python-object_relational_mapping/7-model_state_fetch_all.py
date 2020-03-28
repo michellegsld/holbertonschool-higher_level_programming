@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Task 7:
-model_state_fetch_all.py
+7-model_state_fetch_all.py
 List all State objects from the database hbtn_0e_6_usa
 
 Uses:
