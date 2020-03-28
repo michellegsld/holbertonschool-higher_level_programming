@@ -25,11 +25,11 @@ if __name__ == "__main__":
 
     Session = sessionmaker(engine)
     session = Session()
-    results = session.query(State).all()
+    instance = session.query(State).filter(State.name.contains(name_searched))
 
-    if name_searched in results:
-        print("{}".format(name_searched.id))
-    else:
+    if instance is None:
         print("Not found")
+    else:
+        print("{}".format(instance.id))
 
     session.close()
