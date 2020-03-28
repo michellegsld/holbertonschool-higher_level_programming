@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-Task 8:
-8-model_state_fetch_first.py
-Print the first State object from the database hbtn_0e_6_usa
+Task 9:
+9-model_state_filter_a.py
+ists all State objects that contain the letter a from hbtn_0e_6_usa
 
 Uses:
 7-model_state_fetch_all.sql
