@@ -41,5 +41,8 @@ if __name__ == "__main__":
         print("{}".format(list_cities[i]), end=", "
               if i < len(list_cities) - 1 else "\n")
 
+    if len(list_cities) == 0:
+        print()
+
     cur.close()
     db.close()
