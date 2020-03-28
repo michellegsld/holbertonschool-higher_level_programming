@@ -18,8 +18,7 @@ if __name__ == "__main__":
     db_name = argv[3]
 
     db = MySQLdb.connect(
-        "127.0.0.1",
-        "3306",
+        "localhost",
         sql_user,
         sql_pass,
         db_name
