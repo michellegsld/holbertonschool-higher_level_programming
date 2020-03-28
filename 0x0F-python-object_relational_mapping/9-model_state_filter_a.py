@@ -2,7 +2,7 @@
 """
 Task 9:
 9-model_state_filter_a.py
-ists all State objects that contain the letter a from hbtn_0e_6_usa
+List all State objects that contain the letter a from hbtn_0e_6_usa
 
 Uses:
 7-model_state_fetch_all.sql
