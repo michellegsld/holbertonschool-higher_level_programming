@@ -22,19 +22,16 @@ if __name__ == "__main__":
     db_name = argv[3]
 
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
-                           .format(sql_user, sql_pass, db_name),
-                           pool_pre_ping=True)
+                           .format(sql_user, sql_pass, db_name))
 
     Base.metadata.create_all(engine)
 
-    Session = sessionmaker(engine)
+    Session = sessionmaker(bind=engine)
     session = Session()
 
-    inst_state = State()
-    inst_state.name = "California"
+    inst_state = State(name="California")
 
-    inst_city = City()
-    inst_city.name = "San Francsico"
+    inst_city = City(name="San Francsico")
 
     inst_state.cities = [inst_city]
     session.add(inst_state)
