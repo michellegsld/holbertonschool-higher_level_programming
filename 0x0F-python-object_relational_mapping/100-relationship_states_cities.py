@@ -31,9 +31,7 @@ if __name__ == "__main__":
 
     inst_state = State(name="California")
 
-    inst_city = City(name="San Francsico")
-
-    inst_state.cities = [inst_city]
+    inst_state.cities = [City(name="San Francsico")]
     session.add(inst_state)
 
     session.commit()
