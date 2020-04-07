@@ -1,3 +1,3 @@
 #!/bin/bash
-# Displays the size of the body of the response
+# Sends a DELETE request
 curl -sX DELETE $1
