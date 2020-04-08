@@ -11,3 +11,6 @@
 | 5-post_params.sh | Takes in a URL and after sending a `POST` request, displays the body of the response. The variables `email`, value being `hr@holbertonschool.com`, and `subject`, value being `I will always be here for PLD`, must be sent. |
 | 6-peak.py | Finds the peak in a list of unsorted integers, no modules are imported and the algorithm has the lowest time complexity. |
 | 6-peak.txt | Contains the complexity of the algorithm within `6-peak.py`. This could be either: `O(log(n))`, `O(n)`, `O(nlog(n))` or `O(n2)`. |
+| 100-status_code.sh | Sends a request to a URL and displays only the status code of the response by using `curl` without any pipe, redirection, `;`, or `&&`. |
+| 101-post_json.sh | Sends a JSON `POST` request, by using a JSON file sent in as parameter, to a URL in order to display the body of the response. |
+| 102-catch_me.sh | Makes a request to `0.0.0.0:5000/catch_me` that has the server respond with `You got me!` |
