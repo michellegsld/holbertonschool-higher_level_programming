@@ -11,7 +11,7 @@ from urllib import request, parse
 
 if __name__ == "__main__":
 
-    value = {'email' : argv[2]}
+    value = {'email': argv[2]}
     data = parse.urlencode(value)
     data = data.encode('utf-8')
 
