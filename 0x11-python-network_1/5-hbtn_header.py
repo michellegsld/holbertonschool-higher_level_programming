@@ -10,4 +10,6 @@ from sys import argv
 
 if __name__ == "__main__":
     req = requests.get(argv[1])
-    print(req.headers["X-Request-Id"])
+    ans = req.headers["X-Request-Id"]
+    if len(ans) > 0:
+        print(ans)
