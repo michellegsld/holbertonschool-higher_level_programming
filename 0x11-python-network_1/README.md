@@ -12,5 +12,4 @@
 | 6-post_email.py | Takes in a URL and an email address to send the URL a `POST` request with the email as a parameter, and then display the body of the response.  |
 | 7-error_code.py | Takes in a URL to send a resquest and display the body of the response. |
 | 8-json_api.py | Takes in a letter and sends a `POST` request to `http://0.0.0.0:5000/search_user` with the letter as a parameter. |
-| 9-starwars.py | Takes in a string and sends a search request to the Star Wars API. |
 | 10-my_github.py | Takes Github credentials (username and password) and uses the Github API to display the `id`. |
