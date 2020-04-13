@@ -7,7 +7,7 @@ Sends a request and displays the body of the response
 3-error_code.py
 """
 from sys import argv
-from urllib import request, parse
+from urllib import request, error
 
 if __name__ == "__main__":
     try:
