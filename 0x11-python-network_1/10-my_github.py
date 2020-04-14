@@ -9,7 +9,8 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    req = requests.get("https://api.github.com/users/", data={'username': argv[1], 'token': argv[2]})
+    url = "https://api.github.com/users/" + argv[1]
+    req = requests.get(url)
     try:
         if req.json():
             print("{}".format(req.json()["id"]))
