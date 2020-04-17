@@ -10,7 +10,8 @@ from sys import argv
 
 if __name__ == "__main__":
     url = "https://api.github.com/users/" + argv[1]
-    req = requests.get(url)
+    header = {'Authorization': 'token {}'.format(argv[2])}
+    req = requests.get(url, headers=header)
     try:
         if req.json():
             print("{}".format(req.json()["id"]))
