@@ -17,12 +17,12 @@ function sort (arr, len) {
 }
 
 if (isNaN(parseInt(process.argv[2])) || isNaN(parseInt(process.argv[3]))) {
-    console.log(0);
-  } else {
+  console.log(0);
+} else {
   let arr = [];
   for (let i = 2; i < process.argv.length; i++) {
     arr.push(parseInt(process.argv[i]));
   }
   arr = sort(arr, process.argv.length - 2);
   console.log(arr[process.argv.length - 4]);
-  }
+}
