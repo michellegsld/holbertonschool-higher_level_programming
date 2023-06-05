@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const list = require('./100-data');
-console.log(list);
-const newList = list.map(function (num, index) {
-  return num * index;
-});
+
+var oldList = Object.values(require('./100-data'))[0];
+
+console.log(oldList);
+const newList = oldList.map((x, index) => (x * index));
 console.log(newList);
