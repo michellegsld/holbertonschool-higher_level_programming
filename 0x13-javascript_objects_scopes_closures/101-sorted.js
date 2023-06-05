@@ -8,8 +8,7 @@ console.log(oldDic);
 var newDic = {};
 
 for (const [key, value] of Object.entries(oldDic)) {
-  if (!(value in newDic))
-    newDic[value] = [];
+  if (!(value in newDic)) { newDic[value] = []; }
   newDic[value].push(key);
 }
 
