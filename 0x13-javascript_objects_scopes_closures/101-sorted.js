@@ -3,7 +3,6 @@
 const objReq = require('./101-data');
 
 const oldDic = Object.values(objReq)[0];
-console.log(oldDic);
 
 const newDic = {};
 
